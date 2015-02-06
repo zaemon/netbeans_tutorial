@@ -13,3 +13,11 @@ hs_err_pid*
 /netbeans_tutorial/nbproject/private/
 /netbeans_tutorial/netbeans_tutorial-war/nbproject/private/
 /netbeans_tutorial/netbeans_tutorial-ejb/nbproject/private/
+/netbeans_tutorial/build/
+/netbeans_tutorial/netbeans_tutorial-war/build/
+/netbeans_tutorial/netbeans_tutorial-war/dist/
+/netbeans_tutorial/netbeans_tutorial-ejb/dist/
+/netbeans_tutorial/netbeans_tutorial-ejb/build/
+/netbeans_tutorial/dist/
+/AffableBean/nbproject/private/
+/AffableBean/build/
