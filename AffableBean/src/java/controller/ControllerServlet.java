@@ -17,7 +17,15 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author tarozaemon
  */
-@WebServlet(name = "ControllerServlet", urlPatterns = {"/category", "/addToCart", "/viewCart"})
+@WebServlet(name = "ControllerServlet",
+            loadOnStartup = 1,
+            urlPatterns = {"/category",
+                           "/addToCart",
+                           "/viewCart",
+                           "/updateCart",
+                           "/checkout",
+                           "/purchase",
+                           "/chooseLanguage"})
 public class ControllerServlet extends HttpServlet {
 
     /**
