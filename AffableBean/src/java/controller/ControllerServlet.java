@@ -6,7 +6,6 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -87,6 +86,36 @@ public class ControllerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String userPath = request.getServletPath();
+        
+        switch (userPath) {
+            case ("/addToCart"):
+                // if addToCart action is called
+                // TODO: Implement add product to cart action
+                
+                break;
+            case ("/updateCart"):
+                // if updateCart action is called
+                // TODO: Implement update cart action
+                
+                break;
+            case ("/purchase"):
+                // if purchase action is called
+                // TODO: Implement purchase action
+                
+                userPath = "/confirmation";
+                break;
+        }
+        
+        // use RequestDispathcer to forward request internally
+        String url = "/WEB-INF/view" + userPath + ".jsp";
+        
+        try {
+            request.getRequestDispatcher(url).forward(request, response);
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     /**
